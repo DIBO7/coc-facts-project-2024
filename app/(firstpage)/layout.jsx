@@ -5,14 +5,14 @@ export default function RootLayout({ children }) {
     <main>
       <section>
         {/* This section takes the background entirely */}
-        <header>
+        <header className="header">
           {/* For now, Just a div. */}
           <h1>COC Facts</h1>
         </header>
 
-        <div>
+        
           {children}
-        </div>
+        
 
       </section>
 

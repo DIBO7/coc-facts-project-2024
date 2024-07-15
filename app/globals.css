@@ -17,12 +17,16 @@ html, body{
 main{
   width: 100%;
   overflow-x: hidden;
-  min-height: 100vw;
+  min-height: 100vh;
   background: var(--bg);
 }
 
 h1{
   margin: 10px; padding: 10px;
+}
+
+.header{
+  height: min(60px, 30vh);
 }
 
 /* @media (prefers-color-scheme: dark) {
