@@ -5,6 +5,12 @@ import {FaArrowRight} from "react-icons/fa6";
 import styles from "./search.module.css";
 import { useEffect, useRef} from "react";
 
+/*
+Bug: form should not submit
+1. if entry is empty
+2. if entry is the same as currentInput, cos you are basically user is lookaing at result of the same search
+*/
+
 export default function SearchBox( {hasValue=false, currentInput} ){
 
     const route = useRouter();
