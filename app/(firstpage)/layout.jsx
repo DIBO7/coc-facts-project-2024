@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
         {/* This section takes the background entirely */}
         <header className="header">
           {/* For now, Just a div. */}
-          <h1>COC Facts</h1>
+          <h1 style={{textAlign:"center"}}>COC Facts</h1>
         </header>
 
         

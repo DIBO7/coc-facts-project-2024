@@ -1,10 +1,12 @@
 .theSection{
-    height: calc(100vh - 60px); /*100vh - height of header, padding may break this element*/
+    height: calc(100vh - 260px); /*100vh - height of header, padding may break this element*/
+    padding: min(25vh, 200px) 0 0 0;
 }
 
 .area{
-    width: 80%; /*I can increase this on smaller screens*/
-    margin: max(15%, 200px) auto; /*this seems okay for now at least*/
+    /* width: 60%; I can increase this on smaller screens */
+    width: min(92%, 600px);
+    margin: 0 auto;
 }
 
 .searchbox{
@@ -15,7 +17,7 @@
 
 .searctext{
     width: 100%;
-    padding: 10px 15px;
+    padding: 12px 15px;
     color: var(--faint);
     font-weight: 700;
     outline: none;
