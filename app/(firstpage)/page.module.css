@@ -1,11 +1,35 @@
 .theSection{
     height: calc(100vh - 260px); /*100vh - height of header, padding may break this element*/
     padding: min(25vh, 200px) 0 0 0;
+    /* transition: .6s all cubic-bezier(0.895, 0.03, 0.685, 0.22); */
+    transition: .5s all ease-in-out;
 }
 
 .area{
     /* width: 60%; I can increase this on smaller screens */
-    width: min(92%, 600px);
+    width: min(92%, 680px); /*incase of any issues from here, change back to 600px and see*/
     margin: 0 auto;
+    /* transition: .6s all cubic-bezier(0.895, 0.03, 0.685, 0.22); */
+    transition: .5s all ease-in-out;
 }
 
+.resultcontainer{
+    height: 0px;
+    overflow-y: hidden;
+    /* transition: .6s all cubic-bezier(0.895, 0.03, 0.685, 0.22); */
+    transition: .5s all ease-in-out;
+}
+
+.theSection.aftermath{
+    height: min-content;
+    padding: 40px 0;
+}
+
+.area.aftermath{
+    width: 90vw; /*for starters*/
+}
+
+.resultcontainer.aftermath{
+    height: fit-content;
+    padding: 20px 10px;
+}

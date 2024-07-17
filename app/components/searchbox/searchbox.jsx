@@ -18,7 +18,7 @@ export default function SearchBox( {hasValue=false, currentInput} ){
         event.preventDefault();
         // console.log(event.target.elements[0].value);
         const query = event.target.elements[0].value;
-        route.push(`/search?search=${query}`)
+        route.push(`/?search=${query}`)
     }
 
     let inputRef = useRef();

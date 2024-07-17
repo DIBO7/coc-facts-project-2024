@@ -1,18 +1,18 @@
-import styles from "./page.module.css";
-import SearchBox from "../components/searchbox/searchbox";
+// "use server"
+
+import FirstPageClient from "./searchclient";
+
+// This is the firstpage and must be server components and hence,
+// it shoud cal the searchTemlates component - which is a client component that would useSearcParams to check
+// the state of search...,
 
 export default function Home() {
   
 
   return (
-      <section className={styles.theSection}>
-        {/* This section should slide up on search */}
-          <div className={styles.area}>
-            {/* This is the container for the search */}
-              <SearchBox />
-          </div>
-
-
-      </section>
+      <>
+      <FirstPageClient />
+      </>
+      
   );
 }
