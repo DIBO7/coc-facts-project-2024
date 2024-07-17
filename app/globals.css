@@ -38,7 +38,11 @@ a {
 
 .title{
   text-transform: uppercase;
-  font-weight: 900;
+  /* font-weight: 900;  
+    in dev - 900 is okay
+    in production - its too bold
+  */
+  font-weight: 700;
   letter-spacing: .3px;
   margin: 15px 0;
 }
