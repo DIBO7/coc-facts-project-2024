@@ -18,15 +18,46 @@ main{
   width: 100%;
   overflow-x: hidden;
   min-height: 100vh;
-  background: var(--bg);
+  /* background: var(--bg); */
 }
 
 h1{
-  margin: 10px; padding: 10px;
+  margin: 0px; padding: 20px;
 }
 
 .header{
   height: min(60px, 30vh);
+  background: var(--bg);
+}
+
+a {
+  color: var(--link-blue);
+  text-decoration: none;
+}
+
+.title{
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: .3px;
+  margin: 15px 0;
+}
+
+.subtitle{
+  color: var(--faint);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width:540px){
+  .title{
+      font-size: 18px;
+      letter-spacing: .2px;
+      margin: 10px 0;
+  }
+
+  .subtitle{
+    font-size: 12px;
+  }
 }
 
 /* @media (prefers-color-scheme: dark) {

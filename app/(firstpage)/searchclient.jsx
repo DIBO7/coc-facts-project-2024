@@ -1,13 +1,13 @@
 "use client"
 
-import styles from "./page.module.css";
-import SearchBox from "../components/searchbox/searchbox";
-import ResultSnippet from "../components/searchresult";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import classname from "classname";
+import SearchBox from "../components/searchbox/searchbox";
+import ResultSnippet from "../components/searchresult";
+import styles from "./page.module.css";
 
-//This is called by firstpage/seachpage because i want the page itself to remain server component 
+//This is called by firstpage/seachpage because i want the parent page itself to remain server-rendered component 
 // despite the need to use "useSearchParams" early on. hence this would be a client component
 
 
@@ -20,7 +20,7 @@ export default function FirstPageClient(){
     
     useEffect(()=>{
         if(!searchIsEmpty)setSearchState(true);
-        
+
     }, [searchIsEmpty])
     // let searchNotEmpty = search.length > 0;
 
@@ -39,6 +39,12 @@ export default function FirstPageClient(){
         </section>
 
         <section className={classname(styles.resultcontainer, searchState?styles.aftermath : "")}>
+
+            <ResultSnippet />
+            <ResultSnippet />
+            <ResultSnippet />
+            <ResultSnippet />
+            <ResultSnippet />
             <ResultSnippet />
         </section>
         </>

@@ -1,4 +1,6 @@
-"use client"
+// "use client"
+
+// THIS PAGE IS REDUNDANT. I ONLY KEPT IT FOR THE DUMMYDATA IF I WANT TO COPY IT LATER
 
 import { useSearchParams } from "next/navigation";
 import SearchBox from "../searchbox/searchbox";

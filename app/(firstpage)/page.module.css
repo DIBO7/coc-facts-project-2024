@@ -1,12 +1,13 @@
 .theSection{
-    height: calc(100vh - 260px); /*100vh - height of header, padding may break this element*/
+    height: calc(100vh - min(60px, 30vh) - min(25vh, 200px)); 
+    /* this is 100vh - hegiht of .header from ./globals - padding of .theSection */
     padding: min(25vh, 200px) 0 0 0;
     /* transition: .6s all cubic-bezier(0.895, 0.03, 0.685, 0.22); */
     transition: .5s all ease-in-out;
+    background: var(--bg);
 }
 
 .area{
-    /* width: 60%; I can increase this on smaller screens */
     width: min(92%, 680px); /*incase of any issues from here, change back to 600px and see*/
     margin: 0 auto;
     /* transition: .6s all cubic-bezier(0.895, 0.03, 0.685, 0.22); */
@@ -28,8 +29,15 @@
 .area.aftermath{
     width: 90vw; /*for starters*/
 }
+/* ONLY ISSUE NOW -> when this scrolls out of view, we need to bring back */
+
 
 .resultcontainer.aftermath{
     height: fit-content;
     padding: 20px 10px;
+    background-color: #fff;
+    /* 
+    Instead of this element with its white backgrund to fill the rest of the screen which was difficult
+    I made the entire screen white instead, and then necessary areas blue - problem solved!
+    */
 }

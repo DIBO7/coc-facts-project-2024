@@ -1,0 +1,55 @@
+.snippet{
+    margin: 5px 30px 50px;
+}
+
+.snippet > h3{
+    margin: 0;
+}
+
+.middlebelt{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 2px 0; /*good for screens < 540px tho*/
+}
+
+.pillBottle{
+    display: flex;
+}
+
+.pills{
+    padding: 0 15px 0 0;
+    display: flex;
+}
+
+.eastern{
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}   
+
+.eastern *{
+    margin: 0;
+}
+
+.eastern p{
+    opacity: .9;
+}
+
+.footnote{
+    margin: 15px 0;
+}
+
+.footnote a{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 25px 0 0;
+}
+
+@media only screen and (max-width:540px){
+    .snippet{
+        margin: 5px min(1%, 10px) 50px;
+    }
+}
