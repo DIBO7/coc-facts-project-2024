@@ -1,8 +1,21 @@
 import Link from "next/link"
 import styles from "./index.module.css";
 import classname from "classname";
+import { FaRegClock, FaRegCalendarDays } from "react-icons/fa6";
 
 export default function ResultSnippet(){
+
+    let extras = [
+        {
+            icon: <FaRegClock />,
+            label: "4 days"
+        },
+        {
+            icon: <FaRegCalendarDays />,
+            label: "Next Friday"
+        }
+    ]
+
     return (
         <article className={styles.snippet}>
             <h3 className={"subtitle"}>Nigerian Maritime Academy, Oron</h3>
@@ -10,17 +23,15 @@ export default function ResultSnippet(){
                 {/* contains left div and right div */}
                 <div className={styles.western}>
                     {/* contains top and bottom */}
-                    
-                        <h2 className={"title"}>Advance Fire Fighting</h2>
-                    
+                    <h2 className={"title"}>Advance Fire Fighting</h2>                    
 
                     <div className={styles.pillBottle}>
                         {/* the bottom flex div of two icons and datas */}
                         {
-                            ["4 days", "Next Friday"].map((i, ind)=>{
+                            extras.map(({icon, label}, ind)=>{
                                 return <div key={ind} className={classname(styles.pills, "subtitle")}>
                                     {/* This would be repetead twice, dynamically */}
-                                    <i></i> <span> {i} </span>
+                                    {icon} <span> {label} </span>
                                     {/* i tag will have from react-icons icon */}
                                  </div>
                             })

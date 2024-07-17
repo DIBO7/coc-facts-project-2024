@@ -18,8 +18,19 @@
 }
 
 .pills{
-    padding: 0 15px 0 0;
+    padding: 0 20px 0 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pills svg{
+    margin: 0 5px 0 0;
+}
+
+.pills span{
+    margin: 2px 0 0 0; /*thiis seems to align the icon and label
+    ...don't understand why yet*/
 }
 
 .eastern{
@@ -43,7 +54,9 @@
 }
 
 .footnote a{
-    font-size: 14px;
+    opacity: .8; /*i feel the actual color is too attention-grabbing*/
+    letter-spacing: .3px;
+    font-size: 13px;
     font-weight: 600;
     margin: 0 25px 0 0;
 }
