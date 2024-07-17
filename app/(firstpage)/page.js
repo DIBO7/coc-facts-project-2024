@@ -2,6 +2,7 @@
 // and then from the error i get, I believe next thinks this is now a server action;
 
 import FirstPageClient from "./searchclient";
+import {Suspense} from "react";
 
 // This is the firstpage and must be server components and hence,
 // it shoud cal the firstPageClient component - which is a client component that would useSearcParams to check
@@ -11,9 +12,9 @@ export default function Home() {
   
 
   return (
-      <>
+      <Suspense>
       <FirstPageClient />
-      </>
+      </Suspense>
       
   );
 }
