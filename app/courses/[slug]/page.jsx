@@ -33,6 +33,33 @@ export default function CoursePage({ params }) {
                 <section>
                     <h3>Institutions Offering Advance Medical First Aid</h3>
 
+                    
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Institutions</th>
+                            <th>{"Price (Renewal)"}</th>
+                            <th>Next Class</th>
+                            <th>Duration</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        {
+                            [1,2,3,4].map((_,ind)=>{
+                                return <tr key={ind}>
+                                <td>Nigerian Maritime Academy, Oron</td>
+                                <td>{"NGN 28,500 (22,000)"}</td>
+                                <td>September 16, 2024</td>
+                                <td>2 days</td>
+
+                            </tr>
+                            })
+                        }
+                    </tbody>
+                    </table>
+                   
+
                 </section>
             </article>
 
