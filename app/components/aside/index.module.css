@@ -1,0 +1,44 @@
+.asidebar{
+    background: var(--bg);
+    color: #fff;
+    width: 260px;
+}
+
+.asidebar h1{
+    
+}
+
+.stamp{
+    margin: 30px auto;
+    text-align: center;
+}
+
+.navigation ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li{
+    margin: 5px 0;
+    padding: 0;
+    /* width: 100%; */
+
+}
+.navigation a{
+    text-transform: capitalize;
+    width: calc(100% - 40px) /*100% - padding on sides*/;
+    padding: 10px 20px;
+    display: flex;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: .25px;
+    justify-content: center;    
+}
+
+.navigation a:hover, .navigation a.active{
+    background-color: #fff;
+}

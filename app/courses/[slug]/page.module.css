@@ -1,0 +1,52 @@
+.coursePage{
+    display: flex;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    /* width: 100vw; */
+    /* background: var(--bg); for some reason --bg is not defined */
+}
+
+.coursePage h2{
+    margin: 0;
+}
+
+.document{
+    width: calc(100% - 340px); 
+    /* 100% - width of aside (260px) - side padding of this element (40px * 2) */
+    padding: 20px 40px;
+}
+
+.document h2{
+    text-transform: uppercase;
+    font-weight: 700px;
+}
+
+.document h3{
+    text-transform: uppercase;
+    font-weight: 700px;
+    margin: 10px 0;
+    font-size: 16px;
+    letter-spacing: .25px;
+}
+
+.document p{
+    line-height: 28px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.document > section{
+    margin: 0 0 25px 0;
+}
+
+.document ul{
+    margin: 0;
+}
+
+.document li{
+    margin: 12px 0;
+    font-size: 14px;
+    font-weight: 500px;
+    letter-spacing: .25px;
+}
