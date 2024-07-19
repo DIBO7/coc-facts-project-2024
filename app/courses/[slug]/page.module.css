@@ -12,28 +12,51 @@
 }
 
 .document{
-    width: calc(100% - 340px); 
-    /* 100% - width of aside (260px) - side padding of this element (40px * 2) */
+    width: calc(100% - clamp(190px, 25%, 380px) - 80px); 
+    /* 100% - width of aside max(20%, 180px) - side padding of this element (40px * 2) */
     padding: 20px 40px;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width:769px){
+    .coursePage{
+        flex-direction: column;
+    }
+    .document{
+        width: calc(100% - 40px);
+        /* width:  100% - paddind on sides * 2 */
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width:521px){
+    .document{
+        width: calc(100% - 20px);
+        /* width:  100% - paddind on sides * 2 */
+        padding: 20px 10px;
+    }
 }
 
 .document h2{
     text-transform: uppercase;
-    font-weight: 700px;
+    font-weight: 700;
+    line-height: 24px;
 }
 
 .document h3{
     text-transform: uppercase;
-    font-weight: 700px;
+    font-weight: 700;
     margin: 10px 0;
     font-size: 16px;
     letter-spacing: .25px;
+    line-height: 24px;
 }
 
 .document p{
     line-height: 28px;
     font-size: 15px;
     text-align: justify;
+    font-weight: 500;
 }
 
 .document > section{
@@ -42,17 +65,22 @@
 
 .document ul{
     margin: 0;
+    font-weight: 600px;
 }
 
 .document li{
     margin: 12px 0;
     font-size: 14px;
-    font-weight: 500px;
     letter-spacing: .25px;
 }
 
+.tablewrapper{
+    overflow-x: auto;
+}
+
 .document table{
-    width: 100%;
+    width: max(540px, 100%);
+    /* min-width: 600px; */
 }
 
 .document td{

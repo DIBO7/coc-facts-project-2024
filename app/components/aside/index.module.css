@@ -1,12 +1,23 @@
 .asidebar{
     background: var(--bg);
     color: #fff;
-    width: 260px;
+    /* width: max(25%, 180px); */
+    width: clamp(190px, 25%, 380px);
+    /* width: 260px; */
 }
 
 .stamp{
     margin: 30px auto;
     text-align: center;
+}
+
+@media only screen and (max-width:769px){
+    .asidebar{
+        width: 100%;
+    }
+    .navigation{
+        display: none;
+    }
 }
 
 .navigation ul{
@@ -35,6 +46,6 @@
     justify-content: center;    
 }
 
-.navigation a:hover, .navigation a.active{
+.navigation a:hover, .navigation a:focus, .navigation a.active{
     background-color: #fff;
 }

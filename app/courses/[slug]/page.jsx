@@ -33,7 +33,7 @@ export default function CoursePage({ params }) {
                 <section>
                     <h3>Institutions Offering Advance Medical First Aid</h3>
 
-                    
+                    <div className={styles.tablewrapper}>
                     <table>
                         <thead>
                         <tr>
@@ -58,7 +58,7 @@ export default function CoursePage({ params }) {
                         }
                     </tbody>
                     </table>
-                   
+                    </div>
 
                 </section>
             </article>
