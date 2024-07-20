@@ -1,0 +1,31 @@
+.tablewrapper{
+    overflow-x: auto;
+}
+
+.tablewrapper table{
+    width: max(540px, 100%);
+    /* min-width: 600px; */
+}
+
+.tablewrapper td{
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .3px;
+}
+
+.tablewrapper tbody tr:nth-child(2n){
+    background-color: #B8C9FE;
+}
+
+.tablewrapper thead th{
+    /* B8C9FE */
+    font-size: 19;
+    font-weight: 600;
+    letter-spacing: .35px;
+    padding: 12px 5px;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #94AEFD;
+}

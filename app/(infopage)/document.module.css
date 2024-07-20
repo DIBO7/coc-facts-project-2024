@@ -1,15 +1,4 @@
-.coursePage{
-    display: flex;
-    min-height: 100vh;
-    padding: 0;
-    margin: 0;
-    /* width: 100vw; */
-    /* background: var(--bg); for some reason --bg is not defined */
-}
-
-.coursePage h2{
-    margin: 0;
-}
+/* This css file contains css classes that can be referenced from pages in this generic folder */
 
 .document{
     width: calc(100% - clamp(190px, 25%, 380px) - 80px); 
@@ -19,9 +8,6 @@
 }
 
 @media only screen and (max-width:769px){
-    .coursePage{
-        flex-direction: column;
-    }
     .document{
         width: calc(100% - 40px);
         /* width:  100% - paddind on sides * 2 */
@@ -74,34 +60,3 @@
     letter-spacing: .25px;
 }
 
-.tablewrapper{
-    overflow-x: auto;
-}
-
-.document table{
-    width: max(540px, 100%);
-    /* min-width: 600px; */
-}
-
-.document td{
-    padding: 10px 5px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: .3px;
-}
-
-.document tbody tr:nth-child(2n){
-    background-color: #B8C9FE;
-}
-
-.document thead th{
-    /* B8C9FE */
-    font-size: 19;
-    font-weight: 600;
-    letter-spacing: .35px;
-    padding: 12px 5px;
-    text-align: center;
-    text-transform: capitalize;
-    background-color: #94AEFD;
-}

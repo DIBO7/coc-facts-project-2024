@@ -1,0 +1,91 @@
+.document{
+    width: calc(100% - clamp(190px, 25%, 380px) - 80px); 
+    /* 100% - width of aside max(20%, 180px) - side padding of this element (40px * 2) */
+    padding: 20px 40px;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width:769px){
+    .document{
+        width: calc(100% - 40px);
+        /* width:  100% - paddind on sides * 2 */
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width:521px){
+    .document{
+        width: calc(100% - 20px);
+        /* width:  100% - paddind on sides * 2 */
+        padding: 20px 10px;
+    }
+}
+
+.document h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.document h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 16px;
+    letter-spacing: .25px;
+    line-height: 24px;
+}
+
+.document p{
+    line-height: 28px;
+    font-size: 15px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.document > section{
+    margin: 0 0 40px 0;
+}
+
+.document ul{
+    margin: 0;
+    font-weight: 600px;
+}
+
+.document li{
+    margin: 12px 0;
+    font-size: 14px;
+    letter-spacing: .25px;
+}
+
+.tablewrapper{
+    overflow-x: auto;
+}
+
+.document table{
+    width: max(540px, 100%);
+    /* min-width: 600px; */
+}
+
+.document td{
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .3px;
+}
+
+.document tbody tr:nth-child(2n){
+    background-color: #B8C9FE;
+}
+
+.document thead th{
+    /* B8C9FE */
+    font-size: 19;
+    font-weight: 600;
+    letter-spacing: .35px;
+    padding: 12px 5px;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #94AEFD;
+}
